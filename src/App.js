@@ -67,7 +67,7 @@ function App() {
       </div>       */}
       <div style={{ backgroundColor: "#e2e2e2", padding: "20px", margin: "10px"}}>
         <strong style={{display: "block"}}>Enter Case ID in the form : '12345'</strong><br/>
-        <input type="number" 
+        <input type="number" id="pu" min="100000" max="999999"
         />
       </div> 
       {/* <div style={{ backgroundColor: "#e2e2e2", padding: "20px", margin: "10px"}}>
