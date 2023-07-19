@@ -49,14 +49,14 @@ function App() {
 
   return (
     <div >
-      <div style={{ backgroundColor: "#e2e2e2", padding: "20px", margin: "10px"}}>    
+      {/* <div style={{ backgroundColor: "#e2e2e2", padding: "20px", margin: "10px"}}>    
         <strong style={{display: "block"}}>Step 1 - Enter API URL</strong><br/>
         <input type="text" id="urlinput" style={{width: "50%"}} placeholder="https://example.execute-api.example.amazonaws.com/example/" 
                onChange={(e) => {
                 setBaseUrl(e.target?.value)
                }}
         />
-      </div>  
+      </div>   */}
       <div style={{ backgroundColor: "#e2e2e2", padding: "20px", margin: "10px"}}>
         <strong style={{display: "block"}}>Step 2 - Choose part size (MB)</strong><br/>
         <input type="number" id="pu" min="5" max="500"
