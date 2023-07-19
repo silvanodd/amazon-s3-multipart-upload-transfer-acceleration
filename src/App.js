@@ -82,15 +82,7 @@ function App() {
         />
       </div>                 
       <div style={{ backgroundColor: "#e2e2e2", padding: "20px", margin: "10px"}}>
-        <strong style={{display: "block"}}>Step 5 - Choose a file</strong><br/>
-        <input type="file" id="fileinput" 
-               onChange={(e) => {
-                setFile(e.target?.files?.[0])
-               }}
-        />
-      </div>
-      <div style={{ backgroundColor: "#e2e2e2", padding: "20px", margin: "10px"}}>
-        <strong style={{display: "block"}}>Step 6 - Monitor</strong><br/>
+        <strong style={{display: "block"}}>Monitor</strong><br/>
         <span id="output">{pgvalue}% ({perf} sec)</span>
       </div>
     </div>
