@@ -65,14 +65,11 @@ function App() {
                }}
         />
       </div>       */}
-      {/* <div style={{ backgroundColor: "#e2e2e2", padding: "20px", margin: "10px"}}>
-        <strong style={{display: "block"}}>Step 3 - Choose number of parallel uploads</strong><br/>
-        <input type="number" id="pu" min="5" max="10"
-               onChange={(e) => {
-                setNumuploads(e.target?.value)
-               }}
+      <div style={{ backgroundColor: "#e2e2e2", padding: "20px", margin: "10px"}}>
+        <strong style={{display: "block"}}>Enter Case ID in the form : '12345'</strong><br/>
+        <input type="number" 
         />
-      </div>  */}
+      </div> 
       {/* <div style={{ backgroundColor: "#e2e2e2", padding: "20px", margin: "10px"}}>
         <strong style={{display: "block"}}>Step 4 - Use Transfer Acceleration</strong><br/>
         <input type="checkbox" id="ta"
@@ -82,7 +79,7 @@ function App() {
         />
       </div>                  */}
       <div style={{ backgroundColor: "#e2e2e2", padding: "20px", margin: "10px"}}>
-        <strong style={{display: "block"}}>Step 5 - Choose a file</strong><br/>
+        <strong style={{display: "block"}}>Choose a file to upload :</strong><br/>
         <input type="file" id="fileinput" 
                onChange={(e) => {
                 setFile(e.target?.files?.[0])
