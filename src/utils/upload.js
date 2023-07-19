@@ -31,7 +31,7 @@ export class Uploader {
     this.fileKey = null
     this.onProgressFn = () => {}
     this.onErrorFn = () => {}
-    this.baseURL = options.baseURL
+    this.baseURL = 'https://0hsi9ued2e.execute-api.eu-west-2.amazonaws.com/feap/bropbox/'
   }
 
   start() {
