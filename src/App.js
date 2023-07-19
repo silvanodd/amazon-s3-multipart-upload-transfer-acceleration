@@ -56,31 +56,7 @@ function App() {
                 setBaseUrl(e.target?.value)
                }}
         />
-      </div>  
-      <div style={{ backgroundColor: "#e2e2e2", padding: "20px", margin: "10px"}}>
-        <strong style={{display: "block"}}>Step 2 - Choose part size (MB)</strong><br/>
-        <input type="number" id="pu" min="5" max="500"
-               onChange={(e) => {
-                setPartsize(e.target?.value)
-               }}
-        />
-      </div>      
-      <div style={{ backgroundColor: "#e2e2e2", padding: "20px", margin: "10px"}}>
-        <strong style={{display: "block"}}>Step 3 - Choose number of parallel uploads</strong><br/>
-        <input type="number" id="pu" min="5" max="10"
-               onChange={(e) => {
-                setNumuploads(e.target?.value)
-               }}
-        />
-      </div> 
-      <div style={{ backgroundColor: "#e2e2e2", padding: "20px", margin: "10px"}}>
-        <strong style={{display: "block"}}>Step 4 - Use Transfer Acceleration</strong><br/>
-        <input type="checkbox" id="ta"
-               onChange={(e) => {
-                setTa(e.target?.checked)
-               }}
-        />
-      </div>                 
+      </div>              
       <div style={{ backgroundColor: "#e2e2e2", padding: "20px", margin: "10px"}}>
         <strong style={{display: "block"}}>Step 5 - Choose a file</strong><br/>
         <input type="file" id="fileinput" 
