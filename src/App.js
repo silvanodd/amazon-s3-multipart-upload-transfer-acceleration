@@ -49,16 +49,16 @@ function App() {
 
   return (
     <div >
-      <div style={{ backgroundColor: "#e2e2e2", padding: "20px", margin: "10px"}}>    
-        <strong style={{display: "block"}}>Step 1 - Enter API URL --------------</strong><br/>
-        <input type="text" id="urlinput" style={{width: "50%"}} placeholder="https://psqxn67l81.execute-api.eu-west-2.amazonaws.com/prod/" 
-               onChange={(e) => {
-                setBaseUrl(e.target?.value)
-               }}
-        />
-      </div>              
+      // <div style={{ backgroundColor: "#e2e2e2", padding: "20px", margin: "10px"}}>    
+      //   <strong style={{display: "block"}}>Step 1 - Enter API URL --------------</strong><br/>
+      //   <input type="text" id="urlinput" style={{width: "50%"}} placeholder="https://psqxn67l81.execute-api.eu-west-2.amazonaws.com/prod/" 
+      //          onChange={(e) => {
+      //           setBaseUrl(e.target?.value)
+      //          }}
+      //   />
+      // </div>              
       <div style={{ backgroundColor: "#e2e2e2", padding: "20px", margin: "10px"}}>
-        <strong style={{display: "block"}}>Step 5 - Choose a file</strong><br/>
+        <strong style={{display: "block"}}>Choose a file</strong><br/>
         <input type="file" id="fileinput" 
                onChange={(e) => {
                 setFile(e.target?.files?.[0])
