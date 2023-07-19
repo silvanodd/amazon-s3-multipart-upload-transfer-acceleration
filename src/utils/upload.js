@@ -2,7 +2,7 @@ import axios from "axios"
 
 // initializing axios
 const api = axios.create({
-  baseURL: "/",
+  baseURL: "https://0hsi9ued2e.execute-api.eu-west-2.amazonaws.com/feap/bropbox/",
 })
 
 // original source: https://github.com/pilovm/multithreaded-uploader/blob/master/frontend/uploader.js
@@ -31,8 +31,8 @@ export class Uploader {
     this.fileKey = null
     this.onProgressFn = () => {}
     this.onErrorFn = () => {}
-    this.baseURL = "https://0hsi9ued2e.execute-api.eu-west-2.amazonaws.com/feap/bropbox/"
-  }
+    this.baseURL = options.baseURL
+  }    
 
   start() {
     this.initialize()
