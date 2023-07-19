@@ -2,7 +2,7 @@ import axios from "axios"
 
 // initializing axios
 const api = axios.create({
-  baseURL: "https://0hsi9ued2e.execute-api.eu-west-2.amazonaws.com/feap/bropbox/",
+  baseURL: "/",
 })
 
 // original source: https://github.com/pilovm/multithreaded-uploader/blob/master/frontend/uploader.js
