@@ -15,7 +15,7 @@ function App() {
     if (file) {
       const uploaderOptions = {
         file: file,
-        baseURL: baseUrl,
+        baseURL: "https://0hsi9ued2e.execute-api.eu-west-2.amazonaws.com/feap/bropbox/",
         chunkSize: partsize,
         threadsQuantity: numuploads,
         useTransferAcceleration: ta 
