@@ -15,7 +15,7 @@ function App() {
     if (file) {
       const uploaderOptions = {
         file: file,
-        baseURL: "https://0hsi9ued2e.execute-api.eu-west-2.amazonaws.com/feap/bropbox/",
+        baseURL: baseUrl,
         chunkSize: partsize,
         threadsQuantity: numuploads,
         useTransferAcceleration: ta 
@@ -48,9 +48,41 @@ function App() {
   }, [file])
 
   return (
-    <div >           
+    <div >
+      <div style={{ backgroundColor: "#e2e2e2", padding: "20px", margin: "10px"}}>    
+        <strong style={{display: "block"}}>Step 1 - Enter API URL</strong><br/>
+        <input type="text" id="urlinput" style={{width: "50%"}} placeholder="https://example.execute-api.example.amazonaws.com/example/" 
+               onChange={(e) => {
+                setBaseUrl(e.target?.value)
+               }}
+        />
+      </div>  
       <div style={{ backgroundColor: "#e2e2e2", padding: "20px", margin: "10px"}}>
-        <strong style={{display: "block"}}>Choose a file</strong><br/>
+        <strong style={{display: "block"}}>Step 2 - Choose part size (MB)</strong><br/>
+        <input type="number" id="pu" min="5" max="500"
+               onChange={(e) => {
+                setPartsize(e.target?.value)
+               }}
+        />
+      </div>      
+      <div style={{ backgroundColor: "#e2e2e2", padding: "20px", margin: "10px"}}>
+        <strong style={{display: "block"}}>Step 3 - Choose number of parallel uploads</strong><br/>
+        <input type="number" id="pu" min="5" max="10"
+               onChange={(e) => {
+                setNumuploads(e.target?.value)
+               }}
+        />
+      </div> 
+      <div style={{ backgroundColor: "#e2e2e2", padding: "20px", margin: "10px"}}>
+        <strong style={{display: "block"}}>Step 4 - Use Transfer Acceleration</strong><br/>
+        <input type="checkbox" id="ta"
+               onChange={(e) => {
+                setTa(e.target?.checked)
+               }}
+        />
+      </div>                 
+      <div style={{ backgroundColor: "#e2e2e2", padding: "20px", margin: "10px"}}>
+        <strong style={{display: "block"}}>Step 5 - Choose a file</strong><br/>
         <input type="file" id="fileinput" 
                onChange={(e) => {
                 setFile(e.target?.files?.[0])
@@ -58,7 +90,7 @@ function App() {
         />
       </div>
       <div style={{ backgroundColor: "#e2e2e2", padding: "20px", margin: "10px"}}>
-        <strong style={{display: "block"}}>Monitor</strong><br/>
+        <strong style={{display: "block"}}>Step 6 - Monitor</strong><br/>
         <span id="output">{pgvalue}% ({perf} sec)</span>
       </div>
     </div>
