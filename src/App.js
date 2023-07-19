@@ -57,14 +57,14 @@ function App() {
                }}
         />
       </div>   */}
-      <div style={{ backgroundColor: "#e2e2e2", padding: "20px", margin: "10px"}}>
+      {/* <div style={{ backgroundColor: "#e2e2e2", padding: "20px", margin: "10px"}}>
         <strong style={{display: "block"}}>Step 2 - Choose part size (MB)</strong><br/>
         <input type="number" id="pu" min="5" max="500"
                onChange={(e) => {
                 setPartsize(e.target?.value)
                }}
         />
-      </div>      
+      </div>       */}
       <div style={{ backgroundColor: "#e2e2e2", padding: "20px", margin: "10px"}}>
         <strong style={{display: "block"}}>Step 3 - Choose number of parallel uploads</strong><br/>
         <input type="number" id="pu" min="5" max="10"
